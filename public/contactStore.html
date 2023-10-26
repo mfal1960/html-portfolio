@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <Style>
+        #store h1{
+            color:black;
+            text-align: center;
+        }
+        #store .page-links{
+            background-color: #9EDDFF;
+            width:100%;
+            height:20px;
+            border:3px solid black;
+            display: inline-flex;
+            gap:80px;
+            align-items: center;
+            justify-content: center;
+        }
+        #store .page-links a{
+            background-color: #9EDDFF;
+        }
+
+        #store{
+            display: grid;
+            grid-template-columns: minmax(400px,700px);
+        }
+        #store h1{
+            text-align: center;
+            margin: 0px;
+        }
+        #store h2{
+            text-align: center;
+        }
+      
+       
+        #store .standard{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            background-color: #f2f2f2;
+            border:2px solid black;
+            gap:5px;
+        }
+        #store .optional-features{
+            display:flex;  
+            flex-direction: column;      
+            flex-wrap: wrap; 
+            justify-content:center;
+            align-items: center;
+            background-color: #f2f2f2;
+            border:2px solid black;
+            gap: 5px;
+            padding:5px;
+        }
+        #store .optionDiv{
+            display:flex;
+            flex-direction: column;
+        }
+     
+        #store .person-info{
+            display:flex;        
+            flex-wrap: wrap; 
+            justify-content: space-around;   
+            background-color: #f2f2f2;
+            border:2px solid black;
+            padding:10px;
+            gap: 10px;
+        }
+        #store .person-info .div1{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+          
+            padding: 2px;
+        }
+        #store .person-info .div2{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            
+            padding:2px
+
+        }
+       #store #btn{
+            font-size: larger;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            padding:5px;
+        }
+        
+        #store #message-area{
+            display: flex;
+            flex-direction: column;
+            margin:0px;
+            width: 400px;
+            padding:0px;
+        }
+        #store .contactInfo{
+          
+            margin-top: 20px;
+            
+        }
+       
+        #store .contactInfo h3{
+           margin: 0px;
+           padding: 0px;
+           text-align: center;
+
+        }
+        #store .contactInfo h2{
+           margin: 0px;
+           padding: 0px;
+           text-align: center;
+
+        }
+        
+    </Style>
+</head>
+<body id="store">
+    <form action="contact-form" action="contactform.php" method="post">
+        <input type="text" name="name" placeholder="Full name">
+        <input type="text" name="mail" placeholder="Your email">
+        <input type="text" name="subject" placeholder="Subject">
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit" name="submit">SEND MAIL</button>
+       
+
+
+    </form>
+
+    <div class="page-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contactStore.html">Contact & Store</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./gallery.html">Gallery</a>
+    </div>
+
+    <h1>F-18 Skiff </h1>
+    <h1>Standard and Optional Features</h1>
+    <div class="contactInfo">
+        <h2>Fly Industries</h2>  
+        <h3>31997 County Road 10</h3>
+        <h3>Albany, MN 56307</h3> 
+        <h3>Email: flyindustries18@gmail.com</h3>
+        <h3>Phone: 320-420-8202</h3>
+    </div>
+    
+    <div class="standard-features">
+      
+        <h2>Standard Features   </h2>
+        <h2>Price $22,710 (no options)</h2>       
+        <div class="standard">
+        
+            <br />
+            <div>
+                <ul>
+                    <li>
+                        Trailer 
+                    </li>
+                    <li>
+                        Rub Rail 
+                    </li>
+                    <li>
+                        Fused Switch Panel 4 Gang 
+                    </li>
+                    <li>
+                        Six Terminal Bus Bank 
+                    </li>
+                    <li>
+                        Battery Switch 
+                    </li>
+                    <li>
+                        Navigation Lights 
+                    </li>
+                    <li>
+                        Stern Light 
+                    </li>
+                    <li>
+                        Bilge Pum 
+                    </li>
+                    <li>
+                        Drain Plug 
+                    </li>
+                    
+                </ul>
+                </div>
+
+            <div>
+                <ul>
+                    <li>
+                        Bilge Pump Through Hull 
+                    </li>
+                    <li>
+                        Rod Holders 6
+                    </li>
+                    <li>
+                        Access Hatches 2
+                    </li>
+                    <li>
+                        Aqua Traction 
+                    </li>
+                    <li>
+                        Bow and Stern Eyes 3
+                    </li>
+                    <li>
+                        Fender Pro Receivers Stainless Steel 5
+                    </li>
+                    <li>
+                        Fender Tie Off Cleats 2
+                    </li>
+                    <li>
+                        Push Pole Holders Sto Pro 3
+                    </li>
+                    <li>
+                        Stainless Steel Cam Latches 2
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+
+   
+    <h2 id="optionPrice">Price with options</h2>
+
+    <div class="optional-features">
+        <div class="optionDiv">
+            <label for="suzki30hp">
+                <input type="checkbox" name="suzki30hp" id="suzki30hp" value="yes" > Motor (Suzki 30hp Tiller) = $5,827
+            </label>
+          
+            <label for="jackplate">
+                <input type="checkbox" name="jackplate" id="jackplate" value="yes" > Jack Plate = $1,793
+            </label>
+            
+            <label for="platform">
+                <input type="checkbox" name="platform" id="platform" value="yes" > Poling Platform = $1,367
+            </label>
+               
+            <label for="trimtabs">
+                <input type="checkbox" name="trimtabs" id="trimtabs" value="yes" > Trim Tabs =  $652
+            </label>
+           
+            <label for="frontGasTank">
+                <input type="checkbox" name="frontGasTank" id="frontGasTank" value="yes" > Front Gas Tank =  $356
+            </label>
+        </div>    
+            
+    </div>
+    <br>
+
+    <h2>Contact Information</h2>
+    <div class="person-info">
+    <!-- beginning person info -->
+        <div class="div1"> 
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value="">
+            
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" value="">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" value="">
+            
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" name="phone" value="">
+            <br>
+            
+            
+        </div>
+        <div class="div2">
+            <label for="address1">Address 1</label>
+            <input type="text" id="address1" name="address1" type="">
+         
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2" type="">
+           
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" value="">
+           
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" value="">
+           
+            <label for="zipcode">ZIP Code</label>
+            <input type="text" id="zipcode" name="zipcode" value="">
+           
+            
+        </div>
+        <div id="message-area">
+             <label for="Message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+          
+            
+    </div>
+    
+    <button id="btn">Submit</button>
+      
+
+    <script>
+        var boatprice=22710;
+        var platform = 0;
+        var trimtab = 0;
+        var suz30hp = 0;
+        var jackplate = 0;
+        var frontgastank = 0;
+        var sumOfOptions = 0;
+               
+        const plat = document.querySelector("#platform");
+        const trim = document.querySelector("#trimtabs");
+        const suzki30hp = document.getElementById("suzki30hp");
+        const jack = document.getElementById("jackplate");
+        const frontTank = document.querySelector("#frontGasTank");
+        const optionPrice = document.querySelector("#optionPrice");
+
+        const btn = document.querySelector("#btn");
+         
+        
+        
+     
+        function updateOptPrice(){
+            
+           sumOfOptions=boatprice+platform+trimtab+suz30hp+jackplate+frontgastank;
+            
+            optionPrice.innerHTML="Price with option = $ "+sumOfOptions; 
+                               
+        }
+
+        trim.onclick=()=>{
+            if(trim.checked==false){
+            trimtab = 0;              
+            }else{
+            trimtab = 652;             
+            }
+            updateOptPrice();
+        }   
+
+        plat.onclick=()=>{
+            if(plat.checked==false){
+            platform = 0;         
+            }else{
+            platform = 1367;                               
+            }
+            updateOptPrice();           
+        }
+
+         
+
+        suzki30hp.onclick=()=>{
+           if(suzki30hp.checked==false){
+                suz30hp=0;               
+            }else{
+                suz30hp=5827;               
+            }
+            updateOptPrice();
+        }     
+
+        
+        frontTank.onclick=()=>{
+            if(frontTank.checked==false){
+                frontgastank = 0;   
+            }else{
+                frontgastank = 356;       
+            }
+            updateOptPrice();
+        }       
+            
+        jack.onclick=()=>{
+            if(jack.checked==false){
+                jackplate = 0;     
+            }else{
+                jackplate = 1793;   
+            }
+            updateOptPrice(); 
+        }     
+          
+     
+         
+    </script>
+    <!-- End Options  -->
+</body>
+</html>

@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1{
+        #gallery .page-links{
+            background-color: #9EDDFF;
+            width:100%;
+            height:20px;
+            border:3px solid black;
+            display: inline-flex;
+            gap:80px;
+            align-items: center;
+            justify-content: center;
+        }
+        #gallery .page-links a{
+            background-color: #9EDDFF;
+        }
+        #gallery h1{
             text-align: center;
         }
-        .mold{
+        #gallery .mold{
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
@@ -16,11 +29,11 @@
             gap:10px;
             
         }
-        .mold img{
+        #gallery .mold img{
             height:100px;
         }
 
-        .old-Model{
+        #gallery .old-Model{
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
@@ -28,10 +41,10 @@
             gap:10px;
             
         }
-        .old-Model img{
+        #gallery .old-Model img{
             height:100px;
         }
-        .gel-coat{
+        #gallery .gel-coat{
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
@@ -39,10 +52,10 @@
             gap:10px;
             
         }
-        .gel-coat img{
+        #gallery .gel-coat img{
             height:100px;
         }
-        .reverse-chime{
+        #gallery .reverse-chime{
             flex-direction: row;
             display: flex;
             flex-wrap: wrap;
@@ -50,13 +63,21 @@
             gap:10px;
             
         }
-        .reverse-chime img{
+        #gallery .reverse-chime img{
             height:100px;
         }
         
     </style>
 </head>
-<body>
+<body id="gallery">
+    <div class="page-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./contactStore.html">Contact & Store</a>
+        <a href="./faq.html">FAQ</a>
+        <a href="./gallery.html">Gallery</a>
+    </div>
+
     <h1>Gallery</h1>
    
         
